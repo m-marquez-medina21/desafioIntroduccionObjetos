@@ -17,23 +17,14 @@ class Deck
     def shuffles
         self.cards.shuffle
     end
+
+    def draw
+        self.cards.pop
+
+    end
+
 end
 
-#     def barajar
-#         self.cards.shuffle
-#     end 
-#     def sacar
-#         self.cards.pop(1)
-#     end
-#     def repartir
-#         hand = []
-#         5.times do
-#             hand.push(self.cards.pop)
-#         end
-#         return hand
-#     end
-
-
-# end
-
-# games = Deck.new()
+chinese_cards = Deck.new
+# pp chinese_cards.shuffles
+pp chinese_cards.draw

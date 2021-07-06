@@ -17,13 +17,3 @@ end
 results = []
 5.times { |i| results << Card.new(rand(1..13), ["C", "D", "T", "E"].sample)}
 puts results
-
-# forma antigua de hacer un accessor
-# def numbre=(number)
-#     @number = number
-# end
-
-# forma antigua de hacer un getter
-# def numbre
-#     @number
-# end
